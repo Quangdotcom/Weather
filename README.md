@@ -1,2 +1,2 @@
 # weather
-A weather app using weather-api ang GeoJS
+A weather app using weather-api and GeoJS

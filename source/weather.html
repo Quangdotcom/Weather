@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <title>Weather Today</title>
+    <link rel='icon' type="image/x-icon" href='https://cdn.iconscout.com/icon/free/png-512/free-weather-icon-download-in-svg-png-gif-file-formats--cloud-app-for-ios-store-apps-apple-watch-pack-user-interface-icons-1100758.png'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='weather.css'>
+    <script src='weather.js' defer></script>
+</head>
+<body>
+    <div class="main">
+    <h1>Weather Today</h1>
+    <p id="currentDate"></p>
+    <input type="text" id="city" name="city" placeholder="Enter city name">
+    <button onclick="getWeather()"><i class="fi fi-ss-cloud-sun"></i> Get Weather</button>
+    <button onclick="getCity()"><i class="fi fi-ss-marker"></i> Your City</button>
+    <div class="weather-result">
+        <div id="weatherResult"></div>
+        <h2 id="cityName">________________</h2>
+        <img draggable="false" id="error" src="">
+        <h1 id="temperature">--°C</h1>
+        <h3 id="description">----------------------------</h3>
+        <h3><i id="windIcon" class="fi fi-ss-hurricane" title="Wind Speed"></i> <span id="wind">-- km/h</span></h3>
+        <div id="forecast" class="forecast">
+            <div id="day1" class="day">
+                <h4 id="date1">Tomorrow</h4>
+                <p>--</p>
+                <p>--</p>
+            </div>
+            <div id="day2" class="day">
+                <h4 id="date2">2 days later</h4>
+                <p>--</p>
+                <p>--</p>
+            </div>
+            <div id="day3" class="day">
+                <h4 id="date3">3 days later</h4>
+                <p>--</p>
+                <p>--</p>
+            </div>
+    </div>
+    <input type="radio" id="celsius" name="unit" value="celsius" checked>
+    <label for="celsius">Celsius(°C)</label>
+    <input type="radio" id="fahrenheit" name="unit" value="fahrenheit">
+    <label for="fahrenheit">Fahrenheit(°F)</label>
+    </div>
+</body>
+</html>
